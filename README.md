@@ -9,9 +9,10 @@ There is only one script runAnalysis.R it contains two functions **cleanData()**
                2)Merges the training set and testing set to create one complete dataset and also binds the activity labels and subject_id.
                3)Extracts only the mean and standard deviation variables of the dataset
                4)Renames variables in dataset to better decsriptive names 
+               5) returns the cleaned data
 **createDataset()** : This function does the following work:
 
-               1)Splits the dataset(R dataframe) created by cleanData() according to different subjects(person on whom data was collected).
+               1)Splits the dataset(R dataframe) returned by cleanData() according to different subjects(person on whom data was collected).
                2)Takes mean of all variables for each activity and each subject.
                3)Creates a new dataframe containing all the calculated measurements in above step.
                4)Adds a column giving the Description of the activity.
