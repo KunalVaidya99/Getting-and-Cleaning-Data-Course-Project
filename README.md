@@ -11,7 +11,7 @@ There is only one script runAnalysis.R it contains two functions **cleanData()**
                4)Renames variables in dataset to better decsriptive names 
 **createDataset()** : This function does the following work:
 
-               1)Splits the dataset(*R dataframe*) created by **cleanData()** according to different subjects(person on whom data was collected).
+               1)Splits the dataset(R dataframe) created by cleanData() according to different subjects(person on whom data was collected).
                2)Takes mean of all variables for each activity and each subject.
                3)Creates a new dataframe containing all the calculated measurements in above step.
                4)Adds a column giving the Description of the activity.
