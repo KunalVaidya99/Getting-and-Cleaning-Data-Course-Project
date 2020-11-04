@@ -56,7 +56,7 @@ createDataset<-function(dataset){
     l <- sapply(m,colMeans)                  #function for taking mean of each activity
     return (l)}
   
-  grouped_data_mean <- sapply(data_split,func)   #calculating mean for each activity for each subject
+  gdata <- sapply(data_split,func)   #calculating mean for each activity for each subject
   
   for (i in 1:30){
     n <- rbind(gdata[1:88,i],gdata[89:176,i],gdata[177:264,i],gdata[265:352,i],gdata[353:440,i],gdata[441:528,i])  
